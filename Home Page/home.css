@@ -1,0 +1,51 @@
+body {
+    overflow-x: hidden;
+}
+
+#mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black, white);
+    width: 100vw;
+}
+
+#mainDisplay {
+    width: 80%;
+    height: 90vh;
+    background-color: black;
+}
+
+#pageSelection {
+    width: 90%;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector {
+    margin: 10px;
+    width: 25vw;
+    height: 25vw;
+    background-color: #AAAAAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#contactLogos {
+    width: 80%;
+    height: 80%;
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10%;
+    padding-right: 10%;
+}

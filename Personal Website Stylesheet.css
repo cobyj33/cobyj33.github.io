@@ -1,0 +1,95 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 2px !important;
+    padding: 0 !important;
+    display: block;
+}
+
+body>* {
+    margin: 0 !important;
+}
+
+* {
+    font-family: 'Staatliches', cursive;
+}
+
+
+.arrowed-button {
+    position: relative;
+    top: 0px;
+    box-shadow: none;
+    border: 2px solid black;
+    background-color: white;
+    min-width: 100%;
+    min-height: 50%;
+}
+
+.arrowed-button::before {
+    content: "";
+}
+
+.arrowed-button::after {
+    content: "";
+}
+
+.arrowed-button:hover {
+    transition: background-color 0.2s;
+    background-color: blue;
+}
+
+.arrowed-button:active {
+    transition: background-color 0.1s, top 0.3s, box-shadow 0.3s;
+    background-color: green;
+    top: 5px;
+    box-shadow: 0 0 5px 5px lightgreen;
+}
+
+.arrowed-button:hover::before {
+    transition: content 1s;
+    content: ">>";
+}
+
+.arrowed-button:hover::after {
+    transition: content 1s;
+    content: "<<";
+}
+
+#back-to-top-button {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+    font-size: 40px;
+    color: blue;
+    background-color: white;
+    opacity: 50%;
+    border: none;
+    border-radius: 100%;
+}
+
+#back-to-top-button:hover {
+    transition: opacity 0.2s;
+    opacity: 100%;
+    animation: backToTopAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+#back-to-top-button:hover::before {
+    content: "Back to Top";
+    font-size: 12px;
+    position: absolute;
+    right: 100%;
+    color: blue;
+    background: none;
+    border: none;
+}
+
+@keyframes backToTopAnimation {
+    0% {bottom: 20px}
+    25% {bottom: 0px}
+    50% {bottom: 15px}
+    75% {bottom: 5px}
+}

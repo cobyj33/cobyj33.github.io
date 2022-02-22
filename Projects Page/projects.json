@@ -1,0 +1,60 @@
+[
+    {
+        "title": "PacMan",
+        "description": "A working game of PacMan made entirely in Java with AWT and Swing",
+        "date-created": "January 18th, 2022",
+        "last-modified": "February 18, 2022",
+        "date-completed": "",
+        "images": [
+            "../Images/PacMan Game ScreenShot.png"
+        ],
+        "languages": [
+            "Java"
+        ],
+        "plans": [
+
+        ],
+        "inspiration": "",
+        "libraries": "Standard Java Libraries",
+        "github-link": "https://github.com/cobyj33/Java-PacMan"
+    },
+    {
+        "title": "SWRD",
+        "description": "A Java 2D adventure RPG game created using basic libraries",
+        "date-created": "January 11th, 2022",
+        "last-modified": "February 20, 2022",
+        "date-completed": "",
+        "images": [
+            "../Images/SWRD Screenshot(1).png"
+        ],
+        "languages": [
+            "Java"
+        ],
+        "plans": [
+
+        ],
+        "inspiration": "",
+        "libraries": "Standard Java Libraries",
+        "github-link": "https://github.com/cobyj33/SWRD"
+    },
+    {
+        "title": "Recursive Tic Tac Toe",
+        "description": "A Bottomless Pit of Tic Tac Toe for the Insane",
+        "date-created": "February 19, 2021",
+        "last-modified": "February 20, 2021",
+        "date-completed": "",
+        "images": [
+            "../Images/Recursive TicTacToe Screenshot(1).png",
+            "../Images/Recursive TicTacToe Screenshot(2).png"
+        ],
+        "languages": [
+            "Java"
+        ],
+        "plans": [
+            
+        ],
+        "inspiration": "",
+        "libraries": "Standard Java Libraries",
+        "github-link": "https://github.com/cobyj33/Recursive-Tic-Tac-Toe"
+    }
+]

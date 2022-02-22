@@ -1,0 +1,64 @@
+#navBar {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 20%;
+    min-height: 50px;
+    max-height: 5%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    background-color: #222222;
+    border-bottom: 1px solid black;
+    list-style: none;
+}
+
+#navBar * {
+    margin-right: auto;
+}
+
+#navBar button {
+    padding: 10px;
+    background: none;
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    border: none;
+}
+
+#navBar button:hover {
+    transition: background-color 1s;
+    background-color: #111111;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+#navBar button::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 50vw;
+    top: 50vh;
+    opacity: 35%;
+    background-color: #002200;
+    position: fixed;
+    z-index: 100;
+}
+
+#navBar button:active::before {
+    animation: linkClickAnimation;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes linkClickAnimation {
+    100% { width: 100vw;
+    height: 100vh;
+    left: 0vh;
+    top: 0vh;
+    background-color: green;
+    opacity: 0%; }
+}
